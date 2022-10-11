@@ -1,0 +1,929 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url(Police/Raleway-Regular.ttf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Raleway;
+	font-size: 1em;
+	margin: 0;
+	
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+/*---------CSS pour header-------- */
+/*---------CSS pour header-------- */
+/*---------CSS pour header-------- */
+/*---------CSS pour header-------- */
+
+.header{
+	margin:auto;
+	max-width: 1400px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;	
+}
+
+
+
+.header img {
+	width: 150px;
+	padding: 0px 24px;
+
+}
+
+ul{
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+}
+
+li{	
+	padding-right: 20px;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 0.8em;
+	color: black;
+}
+
+.navlink a:hover{
+	border-top: #0065FC 2px solid;
+	color: #0065FC ;
+}
+
+/*------------MAIN---------*/
+/*------------MAIN---------*/
+/*------------MAIN---------*/
+/*------------MAIN---------*/
+
+.bold{
+	font-weight: bold;
+}
+main{
+	margin:auto;
+	margin-top: 2.5%;
+	display: flex;
+	flex-direction: column;
+	max-width: 1400px;
+	padding: 20px;
+}
+
+
+/*description*/
+
+.searchbar {
+	margin-bottom: 20px;
+}
+
+h1{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+/*Formulaire de recherche*/
+
+form{
+	display: flex;
+	border: 1px #F2F2F2;
+	height: 40px;
+	align-items: center;
+}
+
+.iconsearch{
+	justify-content: center;
+	height: 100%;
+	display: flex;
+	border-radius: 10px 0px 0px 10px;
+	background-color: #F2F2F2;
+	width: 40px;
+}
+
+.iconsearch i {
+	display: flex;
+	align-items: center;
+}
+
+i.fa-magnifying-glass{
+	display: none;
+}
+
+input{
+	border:1px solid #F2F2F2;
+	height: 100%;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+button{
+	background-color:#0065FC;
+	color:white;
+	border-radius: 0px 10px 10px 0px;
+	border:none;
+	height: 100%;
+	padding: 0 15px 0 15px;
+}
+
+/* Partie filtre*/
+
+
+.filters-container{
+	display: flex;
+	margin-top: 30px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+.filters{
+	display: flex;
+	margin-right: 25px;
+	border-radius: 20px 20px 20px 20px;
+	border : 1px solid #F2F2F2;
+	padding: 0px;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+}
+
+.filters:hover{
+	background-color: #F2F2F2;
+}
+
+.filters_title {
+	display: flex;
+	align-items: center;
+	padding-right: 25px;
+	height: 100%;
+	margin: 0;
+	font-size: 1em;
+
+}
+
+.texte_filters{
+	display: flex;
+	margin: 0PX 25px 0px 0px;
+	align-items: center;
+	font-size: smaller;
+	white-space: nowrap;
+	height: 100%;
+	padding: 2.5px;
+}
+
+
+.filters i {
+	display: flex;
+	background-color: #DEEBFF ;
+	color: #0065FC;
+	border-radius: 50%;
+	align-items: center;
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+
+.information {
+	display: flex;
+	height: 25px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.information i{
+	color: #0065FC;
+	display: flex;
+	border: 1px solid #F2F2F2;
+	border-radius: 50%;
+	align-items: center;
+	height: 100%;
+	width: 25px;
+	justify-content: center;
+	margin: 0;
+}
+
+.information p{
+	display: flex;
+	margin: 0;
+	font-size: 1em;
+	align-items: center;
+	height: 100%;
+	padding-left: 5px;
+}
+
+/*présentation des lieux*/
+
+.places {
+	display: flex;
+	gap: 30px;
+}
+
+.places p{
+	font-size: 0.8em;
+}
+
+/*Hebergements*/
+
+
+.details, .linkpop, .linkactivity {
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+}
+
+.hebergements{
+	width: 70%;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	padding: 2.5%;
+	border-radius: 25px;
+}
+
+.hebergements h1{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.lieux{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-content: space-evenly;
+	gap:20px;
+	margin: 20px 0;
+
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	flex-wrap: wrap;
+	min-width: 30%;
+	flex: 1;
+	border-radius: 25px 25px 25px 25px;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+}
+
+.imagelieu{
+	display: flex;
+	width: 100%;
+	height : 60%
+	
+}
+
+.imagelieu img{
+	width: 100%;
+	padding: 2%;
+	border-radius: 25px 25px 0px 0px;
+	object-fit: cover;
+	height: 140px;
+	overflow: hidden;
+}
+
+
+.infoslieu{
+	display: flex;
+	flex-direction: column;
+	padding-left: 5px;
+}
+
+.infoslieu h2{
+	margin: 0%;
+	padding: 10px;
+	
+}
+.infoslieu p{
+	margin: 0%;
+	padding: 3px;
+	padding-left: 10px;
+}
+
+.note{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	display: flex;
+}
+
+.notepop{
+	padding-left: 10px;
+	padding-bottom: 10px;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+.blue{
+	color: #0065FC;
+	padding: 1px 1px;
+}
+.grey{
+	color:#F2F2F2;
+	padding: 1px 1px;
+}
+
+.plusdecontenu{
+	display: flex;
+	margin: 10px 0;
+	list-style-type: none;
+	font-weight: bold;
+	
+}
+
+/*Aside populaire*/
+
+.populaires{
+	display: flex;
+	flex-direction: column;
+	width: 27.5%;
+	background-color:#F2F2F2;
+	justify-content: space-evenly;
+	border-radius: 25px;
+	padding: 2.5%;
+	
+}
+
+.titrepopulaire{
+	display: flex;
+	justify-content: space-between;
+}
+
+.titrepopulaire h1, i{
+	margin: 10px 0;
+}
+
+#black{
+	justify-content: center;
+	align-items: center;
+	margin-right: 5%;
+}
+
+.cardpop{
+	display: flex;
+	background-color: white ;
+	border-radius: 25px;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+}
+
+.linkpop{
+	display: flex;
+}
+
+.linkpop .infoslieu{
+	width: 60%;
+}
+.lieuxpop{
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: space-between;
+	gap : 30px;
+	margin: 20px 0;
+}
+
+.imagelieupop{
+	width: 40%;
+	object-fit: cover;
+	padding: 1.5%;
+	min-width: 120px;
+	display: flex;
+	align-items: center;
+	
+}
+
+.imagelieupop img{
+	width: 100%;
+	border-radius: 25px 0px 0px 25px;
+	height: 150px;
+	object-fit: cover;
+	
+}
+
+/*Activités à Marseille*/
+
+.activities{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.act_places{
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+	padding: 5px 0px;
+	height: 470px;
+
+}
+
+
+.activitiescard{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+	border-radius: 25px;
+	height: 100%;
+	justify-content: space-between;
+	width: 22%;
+	flex-grow: 1;
+}
+
+.twocards{
+	display: flex;
+	flex-direction: column;
+	height: 460px;
+	border-radius: 25px;
+	justify-content: space-between;
+	gap:20px;
+	width: 22%;
+	flex-grow: 1;
+}
+
+.twocards_1{
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+	border-radius: 25px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.imagelieuact_1{
+	width: 100%;
+	height: 210px;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+}
+
+
+.imagelieuact_1 img{
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.twocards_2{
+	height: 175px;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.imagelieuact_2{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.imagelieuact_2 img{
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	height: 125px;
+	width: 100%;
+	
+}
+.twocards_3{
+	height: 215px;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.imagelieuact_3{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 165px;
+}
+
+
+.imagelieuact_3 img{
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	height: 165px;
+	width: 100%;
+	
+}
+
+.twocards_4{
+	height: 215px;
+	box-shadow: 0 2px 8px 0px #f1ebeb ;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.imagelieuact_4{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 165px;
+}
+
+
+.imagelieuact_4 img{
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	height: 165px;
+	width: 100%;
+	
+}
+.imagelieuact{
+	width: 100%;
+	height: 410px;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.imagelieuact img{
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 25px 25px 0 0;
+	height: 100%;
+}
+
+.nameplace{
+	padding: 10px;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+}
+
+.nameplaceact{
+	height: 50px;
+	padding: 10px;
+	padding-left: 20px;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+/*----------FOOTER-------------*/
+/*----------FOOTER-------------*/
+/*----------FOOTER-------------*/
+
+footer{
+	display: flex;
+	background-color:#F2F2F2 ;
+	flex-wrap: wrap;
+	gap: 50px;
+	margin:auto;
+	max-width: 1400px;
+	justify-content: space-between;
+}
+
+.footclass{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	padding: 20px;
+	min-width: 200px;
+	text-decoration: none;
+	
+}
+.footer_title{
+	font-size: 1em;
+}
+
+.subtitlefoot{
+	text-decoration: none;
+	color: inherit;
+}
+
+.footclass ul{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.footli{
+	list-style-type: none;
+}
+/* CSS pour tablette*/
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+
+{
+	.places {
+		flex-direction: column-reverse;
+	}
+
+	.hebergements{
+		width: 100%;
+	}
+
+	.populaires{
+		width: 100%;
+	}
+
+	.lieuxpop{
+		flex-direction: row;
+		gap: 15px;
+	}
+
+	.cardpop {
+		width: 32%;
+	}
+
+	.imagelieupop img {
+		height: 100%;
+	}
+	.activitiescard, .twocards{
+		width: 45%;
+	}
+
+	.act_places{
+		height: auto;
+	}
+}
+
+
+/*CCS pour téléphones*/
+
+@media screen and (max-width: 768px)
+{
+
+	/*header téléphone*/
+
+	body {
+		overflow: visible;
+	}
+	.header{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		margin:0;
+		padding-top:20px;
+	}
+
+	.header img{
+		margin: auto;
+		width: 150px;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+		
+	}
+
+	nav {
+		font-size: 1.5em;
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	li{
+		width: 100%;
+		height: 20px;
+		padding: 0;
+		
+	}
+
+	.header a{
+		justify-content: center;
+		border-bottom: 1px solid #F2F2F2;
+		padding-bottom: 20px;
+		}
+
+	.navlink a:hover{
+			border-bottom: #0065FC 2px solid;
+			color: #0065FC ;
+			border-top: none;
+	}
+
+	/*Searchbar*/
+
+	i.fa-magnifying-glass{
+		display: flex;
+		padding : 15px;
+		border: solid 2px #0065FC;
+		border-radius: 15px;
+		height: 100%;
+		background-color:#0065FC;
+		align-items: center;
+		margin-left: -20px;
+		color:white;	
+	}
+
+	.iconsearch{
+		width: 70px;
+	}
+	
+
+	.searchdesktop{
+		display: none;
+	}
+
+	.filters{ 
+		font-size: larger;
+	}
+
+	/*Filtres pour téléphone*/
+
+	main {
+		margin :0
+	}
+
+	.description, .searchbar {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.choice{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.filters_title{
+		margin-top: 20px;
+		width: 100%;
+	}
+	input {
+		width: 100%;
+	}
+
+	.filters-container{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		margin: 5px;
+		height :auto;
+	}
+	.filters{
+		margin-top: 5px;
+	}
+
+	/*Information téléphone*/
+
+	.information {
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	.information p{
+		flex-wrap: wrap;
+
+	}
+
+	/*Main téléphone*/	
+
+	main{
+		padding: 0;
+	}
+
+	.filters_title{
+		margin-bottom: 10px;
+	}
+
+	
+
+
+	.places{
+		flex-direction: column-reverse;
+	}
+	.places p{
+		font-size: 1em;
+	}
+
+	.hebergements{
+		width: 100%;
+	}
+
+	.nameplace, .nameplaceact{
+		font-size: larger;
+	}
+
+	.populaires{
+		width: 100%;
+		margin-left: 0;
+		border-radius: 0;
+	}
+
+	.lieux{
+		flex-direction: column;
+	}
+
+	.card{
+		width: 100%;
+	}
+	.plusdecontenu{
+		justify-content: flex-start;
+		font-weight: 900;
+		border-bottom: none;
+	}
+	.linkpop div{
+		width: 60%;
+	}
+	.hebergements{
+		background-color: white;
+	}
+	.imagelieu {
+		height: 65%;
+	}
+	.imagelieu img{
+		padding:1%;
+		height: 200px;
+	}
+
+	/*Activities*/
+
+	.activities{
+		padding: 2.5%;
+	}
+
+	.activitiescard, .twocards, .twocards_1, .twocards_2, .twocards_3, .twocards_4{
+		height: auto;
+	}
+
+	.act_places{
+		height: auto;
+	}
+
+	.act_places img{
+		height: 130px;
+		width: 100%;
+	}
+
+	.act_places picture{
+		height: auto;
+	}
+
+	.activitiescard, .twocards{
+		width: 100%;
+	}
+
+	/*Footer tel*/
+
+	footer{
+		flex-direction: column;
+	}
+
+	.footclass{
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+
+	.footclass li{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	}
